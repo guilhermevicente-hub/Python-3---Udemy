@@ -32,3 +32,6 @@ while True:
             palavra_formada += letra_secreta
         else:
             palavra_formada += '*'
+            
+            
+            
