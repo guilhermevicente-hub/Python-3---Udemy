@@ -14,9 +14,11 @@ Faça a contagem de tentativas do seu usuário
 
 palavra_secreta = 'macaco'
 acertadas = ''
+tentativa = 0
 
 while True:
     letra_digitada = input('Digite uma letra: ')
+    tentativa += 1
 
     if len(letra_digitada) > 1:
         print('Digite apenas uma letra.')
@@ -32,6 +34,13 @@ while True:
             palavra_formada += letra_secreta
         else:
             palavra_formada += '*'
+        
+        print('Palavra formada:', palavra_formada)
+    
+    if palavra_formada == palavra_secreta:
+        print('Você ganhou!! Parabens')
+        print('A palavra era', palavra_secreta)
+        print('Tentativas: ', tentativa)
             
             
             
